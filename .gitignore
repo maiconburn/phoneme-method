@@ -111,7 +111,3 @@ temp/
 # Developer Tools
 .manus-logs/
 client/public/__manus__/
-
-# Downloaded Audio Assets
-client/public/audio/phonics/
-
