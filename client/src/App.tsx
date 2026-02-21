@@ -18,12 +18,22 @@ function Router() {
 
   return (
     <Switch>
-      <Route path={"\\"} component={Home} />
-      <Route path="/letter-sounds" component={LetterSounds} />
-      <Route path="/build-a-word" component={BuildAWord} />
-      <Route path="/voice-tester" component={VoiceTester} />
+      <Route path="/">
+        <Home />
+      </Route>
+      <Route path="/letter-sounds">
+        <LetterSounds />
+      </Route>
+      <Route path="/build-a-word">
+        <BuildAWord />
+      </Route>
+      <Route path="/voice-tester">
+        <VoiceTester />
+      </Route>
       {/* Final fallback route */}
-      <Route component={NotFound} />
+      <Route>
+        <NotFound />
+      </Route>
     </Switch>
   );
 }
